@@ -5,7 +5,7 @@ import (
 	"math/rand"
 	"time"
 	math "github.com/chewxy/math32"
-	"github.com/nathanleary/neural-net/training"
+	"github.com/nathanleary/neural-net-test5/training"
 )
 
 // Neural is a neural network
