@@ -3,7 +3,6 @@ package deep
 import (
 	"fmt"
 	"math/rand"
-	"math/rand"
 	"time"
 	math "github.com/chewxy/math32"
 	"github.com/nathanleary/neural-net/training"
