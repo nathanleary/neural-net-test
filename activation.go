@@ -241,13 +241,16 @@ func (a Custom) F(x float32, training bool) float32 {
 	}
 
 
+	
+	
+	if customF != nil {
+	ans :=  customF(x)
 	if training {
 		a.Mem[ans] = x
 	}
-	
-	if customF != nil {
-		return customF(x)
+		return ans
 	} else {
+		ans :=  x
 		return x
 	}
 	
