@@ -73,7 +73,7 @@ func (n *Neural) Refine(data training.Examples) {
 		randInc = l.Neurons[rj].In[rk].Bond * random
 		l.Neurons[rj].In[rk].Bond += randInc
 
-		d := n.calcDistance(training)
+		d = n.calcDistance(training)
 		if dist >= d {
 			dist = d
 		} else {
