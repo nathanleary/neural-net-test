@@ -251,6 +251,9 @@ func (a Custom) F(x float32, training bool) float32 {
 		return ans
 	} else {
 		ans :=  x
+		if training {
+			a.Mem[ans] = x
+		}
 		return x
 	}
 	
